@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"kaimen\startup_stm32f103xb.o"
+"kaimen\main.o"
+"kaimen\stm32f1xx_it.o"
+"kaimen\stm32f1xx_hal_msp.o"
+"kaimen\stm32f1xx_hal_gpio_ex.o"
+"kaimen\stm32f1xx_hal_tim.o"
+"kaimen\stm32f1xx_hal_tim_ex.o"
+"kaimen\stm32f1xx_hal.o"
+"kaimen\stm32f1xx_hal_rcc.o"
+"kaimen\stm32f1xx_hal_rcc_ex.o"
+"kaimen\stm32f1xx_hal_gpio.o"
+"kaimen\stm32f1xx_hal_dma.o"
+"kaimen\stm32f1xx_hal_cortex.o"
+"kaimen\stm32f1xx_hal_pwr.o"
+"kaimen\stm32f1xx_hal_flash.o"
+"kaimen\stm32f1xx_hal_flash_ex.o"
+"kaimen\stm32f1xx_hal_exti.o"
+"kaimen\stm32f1xx_hal_uart.o"
+"kaimen\system_stm32f1xx.o"
+"kaimen\key.o"
+"kaimen\manager.o"
+--strict --scatter "kaimen\kaimen.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "kaimen.map" -o kaimen\kaimen.axf
